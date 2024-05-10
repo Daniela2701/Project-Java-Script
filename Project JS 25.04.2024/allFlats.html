@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Flats</title>
+    <script src="./allFlats.js" type="module" defer></script>
+    <link rel="stylesheet" href="./allFlats.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div>
+          <img src="./real-estate-tree-leaf-svgrepo-com.svg" alt="logo" />
+        </div>
+        <div>
+          <button id="homeBtn">Home</button>
+          <button id="allFlatsBtn">All Flats</button>
+          <button id="newFlatsBtn">New Flats</button>
+        </div>
+      </div>
+
+      <div>
+        <button id="profileUpdate">Update profil</button>
+        <button id="logOut">Log out</button>
+      </div>
+    </nav>
+
+    <form action="">
+      <div>Filter city:</div>
+      <select name="selectCity" id="selectCity">
+        <option value="Choose">Choose city</option>
+        <option value="Mures">Mures</option>
+        <option value="Alba">Alba</option>
+        <option value="Cluj">Cluj</option>
+        <option value="Bucuresti">Bucuresti</option>
+        <option value="Constanta">Constanta</option>
+        <option value="Iasi">Iasi</option>
+      </select>
+      <button id="applyFilters">Apply filters</button>
+
+      <div>Filter price range:</div>
+      <input type="text" name="fromPrice" id="fromPrice" placeholder="from" />
+      <input type="text" name="toPrice" id="toPrice" placeholder="to" />
+      <button id="applyFilterPrice">Apply filter price</button>
+
+      <div>Filter area size range:</div>
+      <input
+        type="text"
+        name="fromAreaSize"
+        id="fromAreaSize"
+        placeholder="from"
+      />
+      <input type="text" name="toAreaSize" id="toAreaSize" placeholder="to" />
+      <button id="applyFilterAreaSize">Apply filter area size</button>
+
+      <div>Sort categories:</div>
+      <select name="selectCategory" id="selectCategory">
+        <option value="Sort">Sort</option>
+        <option value="City" id="city">City</option>
+        <option value="Price">Price</option>
+        <option value="areaSize">Area size</option>
+      </select>
+      <button id="applySort">Apply sort</button>
+      <br />
+      <button id="resetFilters">Reset filters</button>
+    </form>
+    <table id="tableFlats"></table>
+
+    <div id="notFlat"></div>
+  </body>
+</html>

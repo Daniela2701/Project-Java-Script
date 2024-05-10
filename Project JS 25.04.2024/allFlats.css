@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --Soft-red: hsl(10, 79%, 65%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+nav {
+  background-color: var(--Bright-Red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav > div > div > img {
+  width: 40px;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3vw;
+}
+
+nav > div > div > button {
+  border: none;
+  background-color: var(--Bright-Red);
+  letter-spacing: 2px;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+nav > div > div > button:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+nav > div > button {
+  border: none;
+  background-color: var(--Bright-Red);
+  letter-spacing: 2px;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+nav > div > button:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5vw;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
+form {
+  padding: 20px;
+}
+
+input,
+select {
+  padding: 5px 15px;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid var(--Cream);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#applyFilters,
+#applyFilterPrice,
+#applyFilterAreaSize,
+#applySort,
+.resetFilters {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  color: var(--White);
+  background-color: var(--Bright-Red);
+  letter-spacing: 2px;
+}
+
+#applyFilters:hover,
+#applyFilterPrice:hover,
+#applyFilterAreaSize:hover,
+#applySort:hover,
+.resetFilters:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--Cream);
+}
+
+#tableFlats {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tableFlats td,
+#tableFlats th {
+  border: 1px solid var(--Cream);
+  padding: 8px;
+}
+
+#tableFlats tr:nth-child(even) {
+  background-color: var(--Very-pale-orange);
+}
+
+#tableFlats tr:hover {
+  background-color: var(--Very-Pale-Red);
+}
+
+#tableFlats th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--Soft-red);
+  color: white;
+}
+
+.buttonRemoveFromFav,
+.buttonFav,
+.deleteFlatBtn {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  color: var(--White);
+  background-color: var(--Orange);
+  letter-spacing: 2px;
+}
+
+.buttonRemoveFromFav:hover,
+.buttonFav:hover,
+.deleteFlatBtn:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--White);
+}

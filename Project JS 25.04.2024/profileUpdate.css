@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+  --Soft-red: hsl(10, 79%, 65%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  background-color: var(--Cream);
+}
+
+nav {
+  background-color: var(--Bright-Red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+nav > div > div > img {
+  width: 40px;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3vw;
+}
+
+nav > div > div > button {
+  border: none;
+  background-color: var(--Bright-Red);
+  letter-spacing: 2px;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+nav > div > div > button:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+nav > div > button {
+  border: none;
+  background-color: var(--Bright-Red);
+  letter-spacing: 2px;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+}
+
+nav > div > button:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+#welcome {
+  margin: 10px;
+}
+
+form {
+  background-color: var(--White);
+  color: var(--Very-Dark-Blue);
+  position: absolute;
+  width: 30%;
+  top: 120px;
+  right: 35%;
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 1px 0;
+  display: inline-block;
+  border: 1px solid var(--Cream);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#hasAc {
+  display: flex;
+  margin-left: -45%;
+}
+
+#updateProfil {
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  color: var(--White);
+  background-color: var(--Bright-Red);
+  letter-spacing: 2px;
+}
+
+#updateProfil:hover {
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--Cream);
+}
+
+#error {
+  color: red;
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    width: 80%;
+    right: 80%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 480px) {
+  form {
+    width: 60%;
+    right: 80%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

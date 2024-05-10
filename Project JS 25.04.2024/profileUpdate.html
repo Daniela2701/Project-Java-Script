@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./profileUpdate.js" defer type="module"></script>
+    <link rel="stylesheet" href="./profileUpdate.css" />
+    <title>Update Profil</title>
+  </head>
+
+  <body>
+    <nav>
+      <div>
+        <div>
+          <img src="./real-estate-tree-leaf-svgrepo-com.svg" alt="logo" />
+        </div>
+        <div>
+          <button id="homeBtn">Home</button>
+          <button id="allFlatsBtn">All Flats</button>
+          <button id="newFlatsBtn">New Flats</button>
+        </div>
+      </div>
+
+      <div>
+        <button id="profileUpdate">Update profil</button>
+        <button id="logOut">Log out</button>
+      </div>
+    </nav>
+
+    <h1 id="welcome"></h1>
+
+    <div>
+      <form action="">
+        <label for="userName">Username:</label>
+        <input
+          type="text"
+          id="userName"
+          placeholder="userName"
+          required
+          minlength="6"
+        />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email" required readonly />
+
+        <label for="firstName">First name:</label>
+        <input
+          type="text"
+          id="firstName"
+          placeholder="First name"
+          required
+          minlength="2"
+        />
+
+        <label for="lastName">Last name:</label>
+        <input
+          type="text"
+          id="lastName"
+          placeholder="Last name"
+          required
+          minlength="2"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+          minlength="6"
+        />
+
+        <label for="age">Birthday:</label>
+        <input type="date" id="age" required />
+
+        <div><p id="error"></p></div>
+
+        <button type="submit" id="updateProfil">Update profil</button>
+      </form>
+    </div>
+  </body>
+</html>

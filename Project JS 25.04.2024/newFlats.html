@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Flats</title>
+    <script src="./newFlats.js" type="module" defer></script>
+    <link rel="stylesheet" href="./newFlats.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div>
+          <img src="./real-estate-tree-leaf-svgrepo-com.svg" alt="logo" />
+        </div>
+        <div>
+          <button id="homeBtn">Home</button>
+          <button id="allFlatsBtn">All Flats</button>
+          <button id="newFlatsBtn">New Flats</button>
+        </div>
+      </div>
+
+      <div>
+        <button id="profileUpdate">Update profil</button>
+        <button id="logOut">Log out</button>
+      </div>
+    </nav>
+
+    <h1 id="welcome"></h1>
+
+    <div>
+      <form action="">
+        <label for="city">City:</label>
+        <input
+          type="text"
+          id="city"
+          placeholder="City"
+          required
+          minlength="2"
+        />
+
+        <label for="streetName">Street name:</label>
+        <input
+          type="text"
+          id="streetName"
+          placeholder="Street name"
+          required
+          minlength="2"
+        />
+
+        <label for="streetNumber">Street number:</label>
+        <input
+          type="number"
+          id="streetNumber"
+          placeholder="Street number"
+          required
+        />
+
+        <label for="areaSize">Area in mp:</label>
+        <input type="number" id="areaSize" placeholder="Area in mp" required />
+
+        <label for="hasAc">Has AC?</label>
+        <input type="checkbox" id="hasAc" required />
+
+        <label for="yearBuilt">Year built:</label>
+        <input type="number" id="yearBuilt" placeholder="Year built" required />
+
+        <label for="rentPrice"> Rent price:</label>
+        <input
+          type="number"
+          id="rentPrice"
+          placeholder=" Rent price"
+          required
+        />
+
+        <label for="dateAvailable">Date available:</label>
+        <input type="date" id="dateAvailable" required />
+
+        <div><p id="error"></p></div>
+
+        <button id="addFlatBtn">Add flat</button>
+      </form>
+    </div>
+  </body>
+</html>
